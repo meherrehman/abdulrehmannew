@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +14,205 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar-container{
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  z-index: 1;
+}
+
+.navbar-items{
+  margin: 0px 100px;
+}
+
+.main-area-container{
+  position: relative;
+}
+
+.myImage{
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -120px;
+  left: 5%;
+  border: 2px solid black;
+  z-index: 0.5;
+}
+
+
+.about-container h1{
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 5em;
+}
+
+.about-container p{
+  font-family: 'Syne Mono', monospace;
+  font-weight: bolder;
+  font-size: 1.2em;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: antiquewhite;
+}
+
+.about-container a{
+  border: 2px solid purple;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Syne Mono', monospace;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+.about-container a:hover{
+  text-decoration: underline;
+}
+
+
+
+.Skills-container h1{
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 5em;
+}
+
+.Skills-container .skills-box{
+  font-family: 'Syne Mono', monospace;
+  font-weight: bolder;
+  font-size: 1.2em;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: antiquewhite;
+  margin: 5px 0px;
+}
+
+.Skills-container a{
+  border: 2px solid purple;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Syne Mono', monospace;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+.Skills-container a:hover{
+  text-decoration: underline;
+}
+
+
+.project-container h1{
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 5em;
+}
+
+.more_project_btn{
+  margin: 10px 0px;
+  background-color: black;
+  color: white !important;
+  text-decoration: none;
+  padding: 10px;
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 2em;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+
+.more_project_btn:hover{
+  background-color: cornflowerblue;
+  color: black !important;
+  transition-duration: 0.5s;
+  border-radius: 30px;
+}
+
+.like-react{
+  transition-duration: 0.5s;
+}
+
+.like-react:hover{
+  position: relative;
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+
+.footer-container{
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.footer-container a{
+  margin: 10px;
+}
+
+.footer-container p{
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 2em;
+}
+
+.whatsApp-div{
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+
+@media (max-width: 992px) {
+  .about-container h1{
+    position: relative;
+    top: 90px;
+  }
+  .about-container-content{
+    position: relative;
+    top: 30px;
+  }
+  .Skills-container h1{
+    position: relative;
+    top: 40px;
+  }
+ }
+
+
+@media (max-width: 768px) { 
+  .navbar-items{
+    margin: 0px 50px;
+  }
+  .myImage{
+    left: 30%;
+  }
+ }
+
+ @media (max-width: 576px) { 
+  .navbar-items{
+    margin: 0px 20px;
+  }
+  .footer-container p{
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 1.2em;
+  }
+  .footer-img{
+    width: 50px;
+  }
+  .myImage{
+    left: 20%;
+  }
+  .about-img{
+    width: 40px;
+  }
+  .about-container h1{
+    font-size: 4em;
+  }
+  .skills-container h1{
+    font-size: 4em;
+  }
+  .project-container h1{
+    font-size: 4em;
+  }
+  .skills-side-img{
+    width: 250px;
+  }
+ }
